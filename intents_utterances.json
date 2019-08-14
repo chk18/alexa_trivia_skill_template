@@ -1,0 +1,105 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "Raspberry Trivia",
+            "intents": [{
+                    "name": "AnswerIntent",
+                    "slots": [{
+                        "name": "Answer",
+                        "type": "LIST_OF_ANSWERS"
+                    }],
+                    "samples": [
+                        "the answer is {Answer}",
+                        "my answer is {Answer}",
+                        "is it {Answer}",
+                        "{Answer} is my answer"
+                    ]
+                },
+                {
+                    "name": "AnswerOnlyIntent",
+                    "slots": [{
+                        "name": "Answer",
+                        "type": "LIST_OF_ANSWERS"
+                    }], 
+                    "samples": [
+                        "{Answer}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": [
+                        "start game",
+                        "new game",
+                        "start",
+                        "start new game",
+                        "start a game",
+                        "start a new  game"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help",
+                        "help me",
+                        "what can I ask",
+                        "what can I do"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                }
+            ],
+            "types": [{
+                "name": "LIST_OF_ANSWERS",
+                "values": [{
+                        "name": {
+                            "value": "Raspberry Pi Zero"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "February 2012"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "General Purpose Input Output"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Raspberry Pi 4"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "Raspbian"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "United Kingdom"
+                        }
+                    }
+                ]
+            }]
+        }
+    }
+}
